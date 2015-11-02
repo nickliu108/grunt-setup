@@ -1,9 +1,11 @@
 module.exports = {
-	add: function (a, b) {
-		return a + b;
+	capitalize: function (a) {
+		var arr = a.split('');
+		arr[0] = arr[0].toUpperCase();
+		return arr.join('');
 	},
 
-	subtract: function (a, b) {
-		return a - b;
+	reverse: function (a) {
+		return a.split('').reverse().join('');
 	}
 };
